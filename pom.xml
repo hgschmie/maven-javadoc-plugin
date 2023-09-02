@@ -28,7 +28,7 @@ under the License.
   </parent>
 
   <artifactId>maven-javadoc-plugin</artifactId>
-  <version>3.5.1-SNAPSHOT</version>
+  <version>3.5.1-ecotramp.1</version>
   <packaging>maven-plugin</packaging>
 
   <name>Apache Maven Javadoc Plugin</name>
@@ -89,24 +89,23 @@ under the License.
   </prerequisites>
 
   <scm>
-    <connection>scm:git:https://gitbox.apache.org/repos/asf/maven-javadoc-plugin.git</connection>
-    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/maven-javadoc-plugin.git</developerConnection>
-    <tag>HEAD</tag>
-    <url>https://github.com/apache/maven-javadoc-plugin/tree/${project.scm.tag}</url>
+    <connection>scm:git:git://github.com/hgschmie/maven-javadoc-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:hgschmie/maven-javadoc-plugin.git</developerConnection>
+    <tag>maven-javadoc-plugin-3.5.1-ecotramp.1</tag>
+    <url>https://github.com/hgschmie/maven-javadoc-plugin/tree/${project.scm.tag}</url>
   </scm>
-  <issueManagement>
-    <system>jira</system>
-    <url>https://issues.apache.org/jira/browse/MJAVADOC</url>
-  </issueManagement>
-  <ciManagement>
-    <system>Jenkins</system>
-    <url>https://ci-builds.apache.org/job/Maven/job/maven-box/job/maven-javadoc-plugin/</url>
-  </ciManagement>
+
   <distributionManagement>
-    <site>
-      <id>apache.website</id>
-      <url>scm:svn:https://svn.apache.org/repos/asf/maven/website/components/${maven.site.path}</url>
-    </site>
+    <repository>
+      <id>ecotramp-releases</id>
+      <name>ecotramp releases</name>
+      <url>https://nexus.intermeta.com/repository/maven-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>ecotramp-snapshots</id>
+      <name>ecotramp snapshots</name>
+      <url>https://nexus.intermeta.com/repository/maven-snapshots/</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <properties>
@@ -122,7 +121,7 @@ under the License.
     <!-- for ITs -->
     <sitePluginVersion>3.12.1</sitePluginVersion>
     <projectInfoReportsPluginVersion>3.4.2</projectInfoReportsPluginVersion>
-    <project.build.outputTimestamp>2023-02-12T17:50:15Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2023-09-02T00:18:03Z</project.build.outputTimestamp>
     <slf4jVersion>1.7.36</slf4jVersion>
   </properties>
 
