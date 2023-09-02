@@ -28,7 +28,7 @@ under the License.
   </parent>
 
   <artifactId>maven-javadoc-plugin</artifactId>
-  <version>3.5.1-ecotramp.1</version>
+  <version>3.5.2-ecotramp.1-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
 
   <name>Apache Maven Javadoc Plugin</name>
@@ -121,7 +121,7 @@ under the License.
     <!-- for ITs -->
     <sitePluginVersion>3.12.1</sitePluginVersion>
     <projectInfoReportsPluginVersion>3.4.2</projectInfoReportsPluginVersion>
-    <project.build.outputTimestamp>2023-09-02T00:18:03Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2023-09-02T00:19:17Z</project.build.outputTimestamp>
     <slf4jVersion>1.7.36</slf4jVersion>
   </properties>
 
